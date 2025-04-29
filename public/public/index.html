@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FUEL INDICATOR</title>
+    <link rel="stylesheet"href="style.css">
+  </head>
+  <body>
+    <center>
+      <div class="container">
+        <div class="h1img">
+        <div class="h1tag"><p id="heading">FUEL INDICATOR</p></div>
+        <div class="img"><img src="fuel6.webp"height="200px"width="630px"></div></div>
+
+        <div class="form">
+          <form id="km-form">
+            <table>
+                <tr>
+                    <td>Vehicle Name:</td><td><input type="text"placeholder="Enter vehicle name" id="vehicle-name"></td>
+                </tr>
+                <tr>
+                    <td>Mileage (km/l):</td><td><input type="number" placeholder="Enter the mileage" id="mileage" oninput="find()"></td>
+                </tr>
+                
+                <tr>
+                  <td>Fuel Filled (Litres):</td><td><input type="number" placeholder="Fuel filled" id="fuel-filled" oninput="calculation()"></td>
+                </tr>
+                <tr>
+                  <td>Starting (km):</td><td><input type="number" placeholder="Enter present KM" id="present" oninput="add()"></td>
+                </tr>
+                <tr>
+                  <td>Distance Travelled (km):</td>
+                  <td><input type="number" placeholder="Distance travelled" id="dist-travel" oninput="add()"></td>
+                </tr>
+                <tr>
+                  <td>Total KM:</td><td><input id="result1" placeholder="Total km" readonly/></td>
+                </tr>
+                <tr>
+                  <td>Fuel Consumed (Litres):</td><td><input id="fuel-consumed" placeholder="Fuel consumed" readonly/></td>
+                </tr>
+                <tr>
+                  <td>Balance Fuel (Litres):</td><td><input id="balance" placeholder="Balance fuel" readonly/></td>
+                </tr>
+                
+
+                <br>
+
+                  
+          
+      <Form>
+    
+      
+      </div>
+      </div>
+    </center>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+      
+<table border="1">
+      
+    <tr>
+      <div> 
+        <h2 id="h2tag">Vehicle Mileage Checker:</h2>  </div>   
+      <td>Total Distance Travelled (km):</td>
+      <td><input type="number" placeholder="Total distance travelled" id="total-travelled" onkeyup="search()"></td>
+    </tr>
+    <tr>
+      <td>Fuel Consumed for a Trip (Litres):</td>
+      <td><input type="number" placeholder="Fuel consumed for a trip" id="fuel-consumed-for-trip" onkeyup="search()"></td>
+    </tr>
+    <tr>
+      <td>Vehicle Mileage (km/l):</td>
+      <td><input type="number" placeholder="Vehicle mileage" id="vehicle-mileage" readonly></td>
+    </tr>
+    </table>
+    </Form>
+
+
+
+
+    //js
+
+
+    function search() {
+        var input7 = Number(totaldistancetravelled.value); 
+        var input8 = Number(fuelconsumedfortrip.value); 
+    
+        
+        if (isNaN(input7) || isNaN(input8) || input8 === 0) {
+        
+            vehiclemileage.value = ""; 
+            return;
+        }
+    
+        
+        var displaymileage = input7 / input8;
+    
+        
+        vehiclemileage.value = displaymileage.toFixed(2); 
+    }
+    

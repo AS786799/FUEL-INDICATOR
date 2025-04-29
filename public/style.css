@@ -1,0 +1,105 @@
+/* === Reset & Base === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee); /* Peach to light blue */
+  padding: 40px 20px;
+  min-height: 100vh;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: #ffffff; /* Crisp white */
+  border-radius: 20px;
+  padding: 40px;
+  width: 95%;
+  max-width: 750px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15); /* Soft but defined shadow */
+  transition: all 0.3s ease;
+}
+
+
+/* === Heading === */
+.h1tag #heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* === Image === */
+.img img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* === Table Form === */
+table {
+  width: 100%;
+  border-spacing: 0 15px;
+}
+
+td {
+  padding: 10px;
+  font-size: 1.1rem;
+  color: #2c3e50;
+}
+
+input[type="text"],
+input[type="number"],
+input[readonly] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: #f7f9fc;
+  color: #333;
+  transition: 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: #5c6bc0;
+  outline: none;
+  background-color: #eef1f7;
+}
+
+input[readonly] {
+  background-color: #eaeaea;
+  font-weight: bold;
+  color: #555;
+}
+
+/* === Responsive === */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  td {
+    display: block;
+    width: 100%;
+  }
+
+  td:first-child {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  table {
+    display: block;
+  }
+}
